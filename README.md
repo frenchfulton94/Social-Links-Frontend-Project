@@ -26,15 +26,21 @@ Users should be able to:
 ### Screenshot
 
 ![Desktop](./screenshot/Desktop.png)
-![Desktop](./screenshot/Desktop.png)
-![Desktop](./screenshot/Desktop.png)
+![Desktop-hover](./screenshot/Desktop(hover).png)
+![Mobile](./screenshot/mobile.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Github Pages](https://frenchfulton94.github.io/Social-Links-Frontend-Project/)
 
 ## My process
+
+1. Determine the structure of the page.
+2. Determine the proper semantic tags for the content.
+3. Apply tags to the content.
+4. Write out css for each part of the site usign the base tag.
+5. Add classes for similar and resuable parts of the HTML.
+6. Rewrite and reorganize CSS with the new classes.
 
 ### Built with
 
