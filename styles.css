@@ -1,0 +1,121 @@
+:root {
+  /* Colors */
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --dark-grey: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+
+  /* Fonts */
+  --font: "Inter";
+  --font-weight-large: 700;
+  --font-weight-medium: 600;
+  --font-weight-small: 400;
+  --font-size-body: 14px;
+  --font-size-heading: 24px;
+  --font-line-height: 150%;
+
+  /* Stylings */
+  --corner-radius-large: 12px;
+  --corner-radius-small: 8px;
+  --corner-radius-circle: 999px;
+}
+
+body {
+  background-color: var(--off-black);
+  color: var(--white);
+  font-family: "Inter";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.profile {
+  width: 327px;
+  background-color: var(--dark-grey);
+  border-radius: var(--corner-radius-large);
+  font-size: var(--font-size-body);
+  text-align: center;
+  line-height: var(--font-line-height);
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.profile_content {
+  row-gap: 24px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.profile_header {
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile_header_main_location,
+.profile_header_quote {
+  margin: 0px;
+}
+
+.profile_header_image {
+  height: 88px;
+  width: 88px;
+  border-radius: var(--corner-radius-circle);
+  align-self: center;
+}
+
+.profile_header_main_name {
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-medium);
+}
+
+.profile_header_main_name {
+  margin-bottom: 12px;
+}
+
+.profile_header_main_location {
+  color: var(--green);
+  font-weight: var(--font-weight-large);
+}
+
+.profile_links {
+  row-gap: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile_links_list {
+  list-style: none;
+  display: contents;
+}
+
+.profile_links_list_link {
+  display: flex;
+  background-color: var(--grey);
+  height: 45px;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--corner-radius-small);
+  font-weight: var(--font-weight-large);
+}
+
+.profile_links_list_link:hover, .profile_links_list_link:focus {
+  color: var(--grey);
+  background-color: var(--green);
+  cursor: pointer;
+}
+
+footer {
+  position: absolute;
+  bottom: 16px;
+}
+
+@media (min-width: 376px) {
+  .profile {
+    width: 384px;
+    padding: 40px;
+  }
+}
